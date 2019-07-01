@@ -15,14 +15,18 @@ p {
 }
 
 .logo img {
-	width: 250px;
-	animation-name: logo;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
+    width: 250px;
+    -webkit-animation:spin 4s linear 1;
+    -webkit-animation:scale 4s linear infinite;
 }
 
-@keyframes logo {
+@-webkit-keyframes spin { 
+    100% { 
+        transform: rotate(180deg);
+    } 
+}
+
+@-webkit-keyframes scale {
 	0% {
 		transform: scale(1);
 	}
@@ -33,16 +37,6 @@ p {
 		transform: scale(1);
 	}
 }
-
-.logo img {
-	width: 250px;
-	animation-name: onload;
-	animation-duration: 4s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in-out;
-}
-
-@keyframes onload { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .playercount {
 	display: inline-block;
