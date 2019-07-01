@@ -7,20 +7,6 @@ body {
 	width: 100%;
 }
 
-button {
-	position: absolute;
-	top: 90%;
-	left: 50%;
-	transform: translate(-90%,-50%);
-	padding: 10px;
-	background: #fff;
-	border: none;
-	outline: none;
-	font-size: 18px;
-	text-transform: uppercase;
-	cursor: -webkit-grab; cursor: grab;
-}
-
 html, body {
 	height: 100%;
 	display: flex;
