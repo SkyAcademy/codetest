@@ -18,6 +18,7 @@ button {
 	outline: none;
 	font-size: 18px;
 	text-transform: uppercase;
+	cursor: -webkit-grab; cursor: grab;
 }
 
 html, body {
