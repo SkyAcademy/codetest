@@ -34,6 +34,16 @@ p {
 	}
 }
 
+.logo img {
+	width: 250px;
+	animation-name: onload;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes onload { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 .playercount {
 	display: inline-block;
 	margin-top: 30px;
